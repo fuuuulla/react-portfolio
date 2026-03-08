@@ -38,17 +38,17 @@ const categories = [
 export default function Skills() {
   return (
     <section id="skills" className="skills-section">
-      <div className="skills-header">
+      <div className="skills-header reveal">
         <p className="section-label">What I work with</p>
         <h2 className="section-title">My <span>Skills</span></h2>
         <p className="section-subtitle">
-          A collection of technologies I use to build modern, scalable, and beautiful web applications.
+          Technologies I use every day to build modern, scalable and beautiful web applications.
         </p>
       </div>
 
       <div className="skills-categories">
         {categories.map((cat, i) => (
-          <div key={i} className="skill-category">
+          <div key={i} className={`skill-category reveal reveal-delay-${i + 1}`}>
             <p className="skill-category-title">{cat.label}</p>
             <div className="skills-list">
               {cat.skills.map((skill, j) => (
