@@ -1,7 +1,9 @@
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <h2 className="logo">Fulla Dev 💖</h2>
+      <div className="logo">
+        fulla<span>.dev</span>
+      </div>
       <ul className="nav-links">
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>

@@ -1,10 +1,9 @@
-import { FaDownload } from "react-icons/fa"; // icon download
-import "../App.css";
+import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/FullaCV.pdf";  // fichier f public folder
+    link.href = "/FullaCV.pdf";
     link.download = "FullaCV.pdf";
     link.click();
   };
@@ -12,16 +11,41 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
+        <p className="hero-greeting">// hello world 👋</p>
         <h1>
-          Hi, I'm <span>Fulla 👩‍💻</span>
+          I'm <span className="name">Fulla</span>,<br />
+          Fullstack Developer
         </h1>
-        <p>Fullstack Developer | React | Laravel | WordPress</p>
-        <button className="download-btn" onClick={downloadCV}>
-          <FaDownload style={{ marginRight: "8px" }} />
-          Download CV
-        </button>
+        <p className="hero-role">
+          <strong>React</strong> · <strong>Laravel</strong> · <strong>WordPress</strong>
+        </p>
+        <p className="hero-desc">
+          I craft beautiful, high-performance web experiences — from pixel-perfect UIs
+          to scalable backends, with a passion for clean code and modern design.
+        </p>
+        <div className="hero-btns">
+          <button className="btn-primary" onClick={downloadCV}>
+            <FaDownload /> Download CV
+          </button>
+          <a href="#contact" className="btn-outline">
+            Let's Talk
+          </a>
+        </div>
+        <div className="hero-socials">
+          <a href="https://github.com/fuuuulla" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <FaGithub />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <FaLinkedin />
+          </a>
+          <a href="mailto:fulla@email.com" className="social-icon">
+            <FaEnvelope />
+          </a>
+        </div>
       </div>
-      <div className="hero-image"></div>
+      <div className="hero-image-wrap">
+        <div className="hero-avatar">👩‍💻</div>
+      </div>
     </section>
   );
 }

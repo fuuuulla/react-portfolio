@@ -1,3 +1,4 @@
+import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
@@ -12,6 +13,9 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <footer className="footer">
+        <p>Designed & Built by <span>Fulla</span> · {new Date().getFullYear()}</p>
+      </footer>
     </div>
   );
 }
