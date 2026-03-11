@@ -733,3 +733,11 @@ section {
   .hero-avatar { width: 200px; height: 200px; font-size: 70px; }
   .nav-links a { padding: 6px 12px; font-size: 0.82rem; }
 }
+.status-message {
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ff85a2; /* اختاري لون يناسب ستايل بورتفوليو تاعك */
+}
