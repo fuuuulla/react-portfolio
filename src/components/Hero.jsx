@@ -11,13 +11,13 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <p className="hero-greeting">// hello world 👋</p>
+        <p className="hero-greeting">HELLO  </p>
         <h1>
           I'm <span className="name">Fulla</span>,<br />
           Fullstack Developer
         </h1>
         <p className="hero-role">
-          <strong>React</strong> · <strong>Laravel</strong> · <strong>WordPress</strong>
+          <strong>React</strong> · <strong>Laravel</strong>  <strong>WordPress</strong> · <strong>MySQL</strong> · <strong>Tailwind CSS</strong>  
         </p>
         <p className="hero-desc">
           I craft beautiful, high-performance web experiences — from pixel-perfect UIs
@@ -25,7 +25,7 @@ export default function Hero() {
         </p>
         <div className="hero-btns">
           <button className="btn-primary" onClick={downloadCV}>
-            <FaDownload /> Download CV
+            <FaDownload /> Download My CV
           </button>
           <a href="#contact" className="btn-outline">
             Let's Talk
@@ -38,7 +38,7 @@ export default function Hero() {
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaLinkedin />
           </a>
-          <a href="mailto:fulla@email.com" className="social-icon">
+          <a href="mailto:boudoumifella@gmail.com" className="social-icon">
             <FaEnvelope />
           </a>
         </div>
