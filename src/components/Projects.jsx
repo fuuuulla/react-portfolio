@@ -4,8 +4,9 @@ const projects = [
   {
     title: "E-commerce Platform",
     desc: "A fully-featured e-commerce app with React frontend, cart system, authentication, and a robust Laravel REST API backend.",
-    tags: ["React", "Laravel", "MySQL"],
+    tags: ["React", "WordPress", "MySQL"],
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=700&q=80",
+    netlifyLink: "https://supermarchee.netlify.app/",
     live: true,
   },
   {
@@ -59,6 +60,30 @@ export default function Projects() {
                   <span key={i} className="tag">{tag}</span>
                 ))}
               </div>
+              {/* --- أضيفي هذا الجزء هنا --- */}
+  {project.live && project.netlifyLink && (
+    <a 
+      href={project.netlifyLink} 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="project-link-btn"
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        marginTop: '15px',
+        padding: '8px 16px',
+        backgroundColor: '#eca7e9', // اللون الأخضر الخاص بكِ
+        color: 'white',
+        borderRadius: '20px',
+        textDecoration: 'none',
+        fontSize: '0.9rem',
+        fontWeight: 'bold',
+        transition: '0.3s'
+      }}
+    >
+      Voir le projet en direct <span style={{marginLeft: '8px'}}>🚀</span>
+    </a>
+  )}
             </div>
           </div>
         ))}

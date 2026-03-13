@@ -41,6 +41,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 a { text-decoration: none; color: inherit; }
 img { max-width: 100%; display: block; }
 
@@ -740,4 +742,80 @@ section {
   font-weight: 500;
   background: rgba(255, 255, 255, 0.1);
   color: #ff85a2; /* اختاري لون يناسب ستايل بورتفوليو تاعك */
+}
+
+/* --- Variables & Dark Mode --- */
+:root {
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.dark {
+  background-color: #0f172a !important; /* Bleu nuit profond */
+  color: #f1f5f9 !important;
+}
+
+/* Cartes et Éléments en Mode Sombre */
+body.dark .project-card, 
+body.dark .skill-pill,
+body.dark .navbar,
+body.dark .contact-form {
+  background-color: #1e293b !important;
+  border: 1px solid #334155;
+  color: #f1f5f9;
+}
+
+body.dark .section-title span, 
+body.dark .logo span {
+  color: #2ecc71; /* Vert émeraude plus vif pour le noir */
+}
+
+/* --- "Efays Chabin" (Animations Stylées) --- */
+
+/* 1. Effet de flottement sur les cartes projets */
+.project-card {
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 2. Bouton Dark Mode animé */
+.dark-mode-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+.sun-icon { color: #f1c40f; }
+.moon-icon { color: #475569; }
+
+/* 3. Animation sur le bouton CV */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
 }
