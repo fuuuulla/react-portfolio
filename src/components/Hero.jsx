@@ -17,8 +17,8 @@ export default function Hero() {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/FullaCV.pdf";
-    link.download = "FullaCV.pdf";
+    link.href = "/CV_Boudoumi_Fella.pdf";
+    link.download = "CV_Boudoumi_Fella.pdf";
     link.click();
   };
 
