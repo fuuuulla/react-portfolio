@@ -2,7 +2,8 @@ import {
   FaReact, FaLaravel, FaWordpress, FaJava, FaPhp,
   FaHtml5, FaCss3Alt, FaGitAlt, FaDatabase
 } from "react-icons/fa";
-import { SiTailwindcss, SiMysql, SiJavascript, SiVite } from "react-icons/si";
+// زدنا SiFlutter و SiKotlin هنايا 👇
+import { SiTailwindcss, SiMysql, SiJavascript, SiVite, SiFlutter, SiKotlin } from "react-icons/si";
 
 const categories = [
   {
@@ -14,6 +15,14 @@ const categories = [
       { name: "CSS3", icon: <FaCss3Alt /> },
       { name: "TailwindCSS", icon: <SiTailwindcss /> },
       { name: "Vite", icon: <SiVite /> },
+    ],
+  },
+  // زدنا كاتيغوري جديدة خاصة بـ Mobile Development 👇
+  {
+    label: "Mobile Development",
+    skills: [
+      { name: "Flutter", icon: <SiFlutter /> },
+      { name: "Kotlin", icon: <SiKotlin /> },
     ],
   },
   {
@@ -42,7 +51,7 @@ export default function Skills() {
         <p className="section-label">What I work with</p>
         <h2 className="section-title">My <span>Skills</span></h2>
         <p className="section-subtitle">
-          Technologies I use every day to build modern, scalable and beautiful web applications.
+          Technologies I use every day to build modern, scalable and beautiful web & mobile applications.
         </p>
       </div>
 

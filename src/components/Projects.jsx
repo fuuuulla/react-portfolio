@@ -8,15 +8,7 @@ const projects = [
     netlifyLink: "https://supermarchee.netlify.app/",
     live: true,
   },
-  {
-    title: "Site Touristique",
-    desc: "Modern tourism website showcasing destinations, services and travel information with a responsive user interface.",
-    tags: ["React", "CSS3", "Vite"],
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=700&q=80",
-    netlifyLink: "https://agence-touristique.netlify.app/",
-    live: true,
-  },
+  
   {
     title: "Ticketing System",
     desc: "Web-based support ticket management system for tracking, assigning and resolving customer requests efficiently.",
